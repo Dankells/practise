@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel">
+    <meta name="keywords" content="animation, HTML, CSS">
+    <meta name="description" content="a website of animations and made with css and html">
+    <title>Animative webpage</title>
+
+    <link rel="stylesheet" href="index.css" hreflang="en">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul id="mySidenav" class="nav-box">
+                <img src="images/logo.png" alt="" class="logo nav-logo">
+                <img src="images/cart.png" alt="" class="cart-icon nav-icon">
+                <li><a href="javascript:void(0)" id="closer" onclick="closeBtn()"> &times; </a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="menu.html">Products</a></li>
+            </ul>
+            <ul class="second-nav-box">
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Products</a></li>
+            </ul>
+            <a href="animation.html"><img src="images/logo.png" alt="" class="logo"></a>
+            <img src="images/cart.png" alt="" class="cart-icon">
+            <p class="menu-icon" id="opener" onclick="openBtn()">&#9776;</p>
+        </nav>
+
+        <div class="main-text">
+            <p class="first-child-text">I'M</p>
+            <h1>MAYRA</h1>
+            <h3>THE INFORMATIONAL SYSTEM BASE</h3>
+            <a href="">Explore</a>
+            <a href="">View Products</a>
+        </div>
+
+        <footer>
+            <p>follow us on</p>
+            <a href="https://www.dribble.com"><img src="images/dribble.png" alt=""></a>
+            <a href="https://www.telegram.com"><img src="images/telegram.png" alt=""></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt=""></a>
+        </footer>
+    </div>
+    <script>
+        function openBtn(){
+            document.getElementById("mySidenav").style.height = "360px"
+        }
+
+        function closeBtn(){
+            document.getElementById("mySidenav").style.height = "0"
+        }
+    </script>
+</body>
+</html>
